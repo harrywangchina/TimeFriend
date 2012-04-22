@@ -4,6 +4,8 @@ import br.com.dina.ui.widget.UITableView;
 import br.com.dina.ui.widget.UITableView.ClickListener;
 
 import com.halwong.timefriend.R;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
@@ -11,6 +13,7 @@ import greendroid.app.GDActivity;
 
 public class CatalogActivity extends GDActivity {
 	UITableView tableView;
+	public static int selectedIndex = 0;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -25,21 +28,21 @@ public class CatalogActivity extends GDActivity {
 	private void createList() {
         CustomClickListener listener = new CustomClickListener();
         tableView.setClickListener(listener);
-        tableView.addBasicItem("¼ò½é", "");
-        tableView.addBasicItem("Ç°ÑÔ", "");
-        tableView.addBasicItem("µÚÒ»ÕÂ", getString(R.string.book_chapter1));
-        tableView.addBasicItem("µÚ¶şÕÂ", getString(R.string.book_chapter2));
-        tableView.addBasicItem("µÚÈıÕÂ", getString(R.string.book_chapter3));
-        tableView.addBasicItem("µÚËÄÕÂ", getString(R.string.book_chapter4));
-        tableView.addBasicItem("µÚÎåÕÂ", getString(R.string.book_chapter5));
-        tableView.addBasicItem("µÚÁùÕÂ", getString(R.string.book_chapter6));
-        tableView.addBasicItem("µÚÆßÕÂ", getString(R.string.book_chapter7));
+        tableView.addBasicItem("ç®€ä»‹", "");
+        tableView.addBasicItem("å‰è¨€", "");
+        tableView.addBasicItem("ç¬¬ä¸€ç« ", getString(R.string.book_chapter1));
+        tableView.addBasicItem("ç¬¬äºŒç« ", getString(R.string.book_chapter2));
+        tableView.addBasicItem("ç¬¬ä¸‰ç« ", getString(R.string.book_chapter3));
+        tableView.addBasicItem("ç¬¬å››ç« ", getString(R.string.book_chapter4));
+        tableView.addBasicItem("ç¬¬äº”ç« ", getString(R.string.book_chapter5));
+        tableView.addBasicItem("ç¬¬å…­ç« ", getString(R.string.book_chapter6));
+        tableView.addBasicItem("ç¬¬ä¸ƒç« ", getString(R.string.book_chapter7));
         tableView.addBasicItem(getString(R.string.book_appendix), "");
         tableView.addBasicItem(getString(R.string.book_index), "");
         tableView.addBasicItem(getString(R.string.book_reference), "");
         tableView.addBasicItem(getString(R.string.book_addon), "");
         tableView.addBasicItem(getString(R.string.book_claim), "");
-        tableView.addBasicItem(getString(R.string.book_goto), "Áº¾§");
+        tableView.addBasicItem(getString(R.string.book_goto), "ä½œè€…ï¼šæ¢æ™¶");
         tableView.addBasicItem(getString(R.string.book_howto), "");
         tableView.addBasicItem(getString(R.string.book_editor), "");
         tableView.addBasicItem(getString(R.string.book_info), "");
@@ -47,7 +50,10 @@ public class CatalogActivity extends GDActivity {
 	
 	private class CustomClickListener implements ClickListener {
         public void onClick(int index) {
-            Toast.makeText(CatalogActivity.this, "item clicked: " + index, Toast.LENGTH_SHORT).show();
+        	selectedIndex = index;
+        	Log.e("index", "" + selectedIndex);
+        	Intent intent = new Intent(CatalogActivity.this, ContentActivity.class);
+            startActivity(intent);
         }       
     }   
 }

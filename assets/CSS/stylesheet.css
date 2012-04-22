@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+.bold {
+    font-weight: bold;
+}
+.calibre {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+body {
+    color: #222222;
+    
+}
+p{
+	line-height: 3em;
+}
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0;
+}
+h2 {
+    color: #339933;
+}
+a:link {
+    color: #333333;
+    text-decoration: none;
+}
+a:visited {
+    color: #AAAAAA;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}

@@ -27,6 +27,10 @@
         <activity
             android:name=".activity.CatalogActivity"
             android:label="@string/actionbar_catalog"></activity>
+        
+         <activity
+            android:name=".activity.ContentActivity"
+            ></activity>
     </application>
 
 </manifest>
