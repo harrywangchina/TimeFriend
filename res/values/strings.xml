@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">把时间当做朋友</string>
+    <string name="app_url">http://www.lixiaolai.com/</string>
+    <string name="quick_action_grid">点击阅读</string>
+    
+    <string name="gd_go_home">Go home</string>
+	<string name="gd_search">搜索</string>
+	<string name="gd_talk">Talk</string>
+	<string name="gd_compose">继续</string>
+	<string name="gd_export">目录</string>
+	<string name="gd_share">分享</string>
+	<string name="gd_refresh">Refresh</string>
+	<string name="gd_take_photo">Take photo</string>
+	<string name="gd_pick_photo">Pick photo</string>
+	<string name="gd_locate">反馈</string>
+	<string name="gd_edit">关于</string>
+	<string name="gd_add">Add</string>
+	<string name="gd_star">Star</string>
+	<string name="gd_sort_by_size">Sort by size</string>
+	<string name="gd_sort_alpha">Sort alphabetically</string>
+	<string name="gd_locate_myself">Locate myself</string>
+	<string name="gd_compass">Compass</string>
+	<string name="gd_help">Help</string>
+	<string name="gd_info">Info</string>
+	<string name="gd_settings">Settings</string>
+	<string name="gd_list">List</string>
+	<string name="gd_trashcan">Delete</string>
+	<string name="gd_eye">See</string>
+	<string name="gd_all_friends">All friends</string>
+	<string name="gd_group">Group</string>
+	<string name="gd_gallery">Gallery</string>
+	<string name="gd_slideshow">Slideshow</string>
+	<string name="gd_mail">Mail</string>
+    
+    <string name="info_activity_title">\t\t有人说，如果早读这本书会改变自己的人生轨迹，也许有人会认为这么说太夸张。但我觉得：会的。改变人生命运的无非两样东西：一个是你读过的书，一个是你遇到的人。\n\n\t\t这本书颠覆了一些我早已根深蒂固的观念，有醍醐灌顶的感觉。故通过发布本应用，希望更多人能看到这本书，运用心智获得解放，以平庸的资质创造不平庸的成就。\n\n\t\t本书来源于李笑来博客上的PDF电子版，本书版权归李笑来老师所有。</string>
+    
+    <string name="actionbar_info">关于</string>
+    <string name="actionbar_catalog">目录</string>
+    
+    <string name="book_summary">简介</string>
+    <string name="book_preface">前言</string>
+    <string name="book_chapter1">心智的力量</string>
+    <string name="book_chapter2">开启自己的心智</string>
+    <string name="book_chapter3">通过管理自己与时间作朋友</string>
+    <string name="book_chapter4">开拓我们的心智</string>
+    <string name="book_chapter5">小心所谓“成功学”</string>
+    <string name="book_chapter6">更多思考</string>
+    <string name="book_chapter7">从此时此刻开始改变</string>
+    <string name="book_appendix">附录</string>
+    <string name="book_index">索引</string>
+    <string name="book_reference">参考文献</string>
+    <string name="book_addon">补记</string>
+    <string name="book_claim">反侵权盗版声明</string>
+	<string name="book_goto">走向独立\t走向自由</string>
+	<string name="book_howto">如何唯美地阅读本书</string>
+	<string name="book_editor">编书者说</string>
+	<string name="book_info">版权信息</string>
+</resources>
